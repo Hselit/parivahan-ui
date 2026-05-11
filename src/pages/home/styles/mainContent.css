@@ -55,7 +55,7 @@
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: fill;
+  object-fit:fill
 }
 
 /* =========================
@@ -88,7 +88,8 @@
   }
 
   .india-map-panel {
-    display: none;
+    display: block;
+    grid-column: 1 / -1; /* forces it to move below */
   }
 }
 
