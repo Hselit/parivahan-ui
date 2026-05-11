@@ -1,0 +1,142 @@
+.main-content {
+  padding: 8px;
+  background: #efefef;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content-layout {
+  display: grid;
+  /* 3 : 6 : 3 */
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 8px;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* =========================
+   COMMON PANEL STYLES
+========================= */
+
+.service-panel,
+.center-banner,
+.india-map-panel {
+  width: 100%;
+  min-height: 450px;
+  height: 90%;
+  box-sizing: border-box;
+}
+
+/* =========================
+   LEFT PANEL
+========================= */
+
+.service-panel {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid #bcbcbc;
+}
+
+/* =========================
+   CENTER BANNER
+========================= */
+
+.center-banner {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid #bcbcbc;
+
+  display: flex;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit:fill
+}
+
+/* =========================
+   INDIA MAP PANEL
+========================= */
+
+.india-map-panel {
+  background: white;
+  border-radius: 20px;
+  padding: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.india-map-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================
+   LARGE TABLETS
+========================= */
+
+@media (max-width: 1200px) {
+  .content-layout {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .india-map-panel {
+    display: none;
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 900px) {
+  .main-content {
+    padding: 12px;
+  }
+
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .service-panel,
+  .center-banner,
+  .india-map-panel {
+    min-height: auto;
+    width: 100%;
+  }
+
+  .center-banner {
+    min-height: 320px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 8px;
+  }
+
+  .content-layout {
+    gap: 12px;
+  }
+
+  .service-panel,
+  .center-banner,
+  .india-map-panel {
+    border-radius: 18px;
+  }
+
+  .center-banner {
+    min-height: 240px;
+  }
+}

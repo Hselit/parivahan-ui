@@ -1,0 +1,60 @@
+.home-page {
+  background: #efefef;
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  gap: 16px;
+  padding: 18px;
+  align-items: flex-start;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  width: 420px;
+  flex-shrink: 0;
+}
+
+/* CENTER IMAGE */
+.center-panel {
+  flex: 1;
+}
+
+.center-panel img {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+  border-radius: 28px;
+  display: block;
+}
+
+/* RIGHT MAP */
+.right-panel {
+  width: 340px;
+  flex-shrink: 0;
+}
+
+.right-panel img {
+  width: 100%;
+  border-radius: 20px;
+  background: white;
+  padding: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 1200px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel,
+  .center-panel {
+    width: 100%;
+  }
+
+  .center-panel img {
+    height: auto;
+  }
+}

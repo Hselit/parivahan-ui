@@ -1,0 +1,208 @@
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 28px;
+
+  background: linear-gradient(
+    to right,
+    #0d87a7,
+    #0a6f95,
+    #0c5f88
+  );
+
+  color: white;
+
+  height: 80px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  flex: 1;
+}
+
+.emblem-logo {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+}
+
+.banner-title h1 {
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 1.1;
+
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   CENTER SECTION
+========================= */
+
+.banner-center {
+  flex: 2;
+  text-align: left;
+}
+
+.gov-label {
+  margin: 10px 2px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.banner-center h2 {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.banner-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  flex: 1;
+}
+
+.india-flag {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================
+   LARGE TABLETS
+========================= */
+
+@media (max-width: 1200px) {
+  .banner-title h1 {
+    font-size: 18px;
+  }
+
+  .banner-center h2 {
+    font-size: 18px;
+  }
+
+  .gov-label {
+    font-size: 12px;
+  }
+
+  .india-flag {
+    width: 75px;
+  }
+
+  .emblem-logo {
+    width: 42px;
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 900px) {
+  .main-banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+
+    padding: 14px;
+
+    gap: 12px;
+  }
+
+  .banner-left,
+  .banner-center,
+  .banner-right {
+    flex: unset;
+    width: 100%;
+
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner-center {
+    order: 2;
+  }
+
+  .banner-right {
+    order: 3;
+  }
+
+  .banner-title h1 {
+    font-size: 20px;
+  }
+
+  .banner-center h2 {
+    font-size: 20px;
+  }
+
+  .gov-label {
+    font-size: 13px;
+  }
+
+  .india-flag {
+    width: 70px;
+  }
+
+  .emblem-logo {
+    width: 45px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .main-banner {
+    padding: 12px;
+  }
+
+  .banner-left {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .banner-title h1 {
+    font-size: 18px;
+  }
+
+  .banner-center h2 {
+    font-size: 18px;
+  }
+
+  .gov-label {
+    font-size: 12px;
+  }
+
+  .india-flag {
+    width: 60px;
+  }
+
+  .emblem-logo {
+    width: 38px;
+  }
+}

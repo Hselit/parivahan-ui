@@ -1,0 +1,130 @@
+header {
+  width: 100%;
+}
+
+/* TOP ALERT */
+
+.top-alert-bar {
+  height: 38px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 1rem;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #d7d7d7;
+
+  font-size: 14px;
+}
+
+.top-alert-text {
+  color: red;
+  font-weight: 700;
+}
+
+.top-alert-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.language-select {
+  border: none;
+  background: transparent;
+}
+
+.top-alert-actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* ACTION MENU */
+
+.action-menu {
+  display: flex;
+  gap: 0.8rem;
+
+  padding: 0.8rem;
+
+  background: #dcdcdc;
+}
+
+.menu-btn {
+  padding: 0.9rem 1rem;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #6ca8f1,
+      #3d7bd8
+    );
+
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.5),
+    0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-btn.active {
+  background:
+    linear-gradient(
+      to bottom,
+      #1b4ea7,
+      #0c2d68
+    );
+}
+
+.admin-btn {
+  margin-left: auto;
+}
+
+.brand-inner {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 24px;
+}
+
+.brand-title {
+  flex: 1;
+}
+
+.brand-title-main {
+  font-size: 52px;
+
+  font-weight: 700;
+
+  color: white;
+
+  line-height: 1.1;
+}
+
+.brand-title-sub {
+  font-size: 18px;
+
+  color: white;
+
+  margin-top: 10px;
+}
+
+.brand-title-gov {
+  color: white;
+
+  margin-top: 4px;
+}

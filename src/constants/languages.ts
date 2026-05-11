@@ -6,9 +6,5 @@ export const LANGUAGES = [
   {
     code: "hi",
     label: "हिंदी",
-  },
-  {
-    code: "ta",
-    label: "தமிழ்",
-  },
+  }
 ];
