@@ -49,11 +49,11 @@ export default function TopAlertBar() {
 
         <button onClick={decreaseFont}>A-</button>
 
-        <img src="../../../src/assets/icon-faq.png" alt="FAQ" />
+        <img src="/icon-faq.png" alt="FAQ" />
 
-        <img src="../../../src/assets/User_Manual.png" alt="Manual" />
+        <img src="/User_Manual.png" alt="Manual" />
 
-        <img src="../../../src/assets/contactUS.png" alt="Contact" />
+        <img src="/contactUS.png" alt="Contact" />
       </div>
     </div>
   );

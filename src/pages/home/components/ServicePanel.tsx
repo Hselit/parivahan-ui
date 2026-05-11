@@ -38,12 +38,12 @@ export default function ServicePanel() {
 
       <div className="service-types">
         <div className={`service-type ${isVehicleReg ? "active" : ""}`} onClick={() => handleFormChange("vehicle")}>
-          <img src="../../../src/assets/byregnNo.png" alt="Vehicle" className="service-icon" />
+          <img src="/byregnNo.png" alt="Vehicle" className="service-icon" />
           <span>{t("vehicleRegistration")}</span>
         </div>
 
         <div className={`service-type ${!isVehicleReg ? "active" : ""}`} onClick={() => handleFormChange("authority")}>
-          <img src="../../../src/assets/authority.png" alt="Authority" className="service-icon" />
+          <img src="/authority.png" alt="Authority" className="service-icon" />
           <span>{t("registeringAuthority")}</span>
         </div>
       </div>

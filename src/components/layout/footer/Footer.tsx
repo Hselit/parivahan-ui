@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-inner">
-        <img src="../../../src/assets/nic-logo.png" alt="NIC" className="footer-logo" />
+        <img src="/nic-logo.png" alt="NIC" className="footer-logo" />
 
         <div className="footer-text">
           <p>{t("footer.line1")}</p>

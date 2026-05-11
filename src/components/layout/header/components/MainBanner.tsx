@@ -29,7 +29,7 @@ export default function MainBanner() {
       </div>
 
       <div className="banner-right">
-        <img src="../../../src/assets/swachh-bharat-logo.png" alt="India Flag" className="india-flag" />
+        <img src="/swachh-bharat-logo.png" alt="India Flag" className="india-flag" />
       </div>
     </div>
   );
