@@ -8,8 +8,7 @@ import "../styles/topAlertBar.css";
 export default function TopAlertBar() {
   const { t } = useTranslation();
 
-  const [fontScale, setFontScale] =
-    useState(1);
+  const [fontScale, setFontScale] = useState(1);
 
   const increaseFont = () => {
     const next = fontScale + 0.1;
@@ -29,65 +28,33 @@ export default function TopAlertBar() {
 
   return (
     <div className="top-alert-bar">
-
       {/* LEFT SCROLLING TEXT */}
       <div className="top-alert-marquee">
-
-        <div className="top-alert-text">
-          {t("marqueetext")}
-        </div>
-
+        <div className="top-alert-text">{t("marqueetext")}</div>
       </div>
 
       {/* RIGHT ACTIONS */}
       <div className="top-alert-actions">
-
-        <select
-          className="language-select"
-          value={i18n.language}
-          onChange={(e) =>
-            i18n.changeLanguage(e.target.value)
-          }
-        >
+        <select className="language-select" value={i18n.language} onChange={(e) => i18n.changeLanguage(e.target.value)}>
           {LANGUAGES.map((lang) => (
-            <option
-              key={lang.code}
-              value={lang.code}
-            >
+            <option key={lang.code} value={lang.code}>
               {lang.label}
             </option>
           ))}
         </select>
 
-        <button onClick={increaseFont}>
-          A+
-        </button>
+        <button onClick={increaseFont}>A+</button>
 
-        <button>
-          A
-        </button>
+        <button>A</button>
 
-        <button onClick={decreaseFont}>
-          A-
-        </button>
+        <button onClick={decreaseFont}>A-</button>
 
-        <img
-          src="../../../src/assets/icon-faq.png"
-          alt="FAQ"
-        />
+        <img src="../../../src/assets/icon-faq.png" alt="FAQ" />
 
-        <img
-          src="../../../src/assets/User_Manual.png"
-          alt="Manual"
-        />
+        <img src="../../../src/assets/User_Manual.png" alt="Manual" />
 
-        <img
-          src="../../../src/assets/contactUS.png"
-          alt="Contact"
-        />
-
+        <img src="../../../src/assets/contactUS.png" alt="Contact" />
       </div>
-
     </div>
   );
 }

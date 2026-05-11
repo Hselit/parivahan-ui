@@ -7,7 +7,7 @@ import { getRtosByState } from "../../../utils/getRtosByState";
 
 export default function ServicePanel() {
   const { t } = useTranslation();
-  const [isVehicleReg,setIsVehicleReg] = useState(false);
+  const [isVehicleReg, setIsVehicleReg] = useState(false);
 
   const [formData, setFormData] = useState({
     registrationNumber: "",
@@ -27,10 +27,10 @@ export default function ServicePanel() {
     }));
   }
 
-  const handleFormChange = (type: "vehicle" | "authority") =>{
-    console.log(type)
-    setIsVehicleReg(type === 'vehicle');
-  }
+  const handleFormChange = (type: "vehicle" | "authority") => {
+    console.log(type);
+    setIsVehicleReg(type === "vehicle");
+  };
 
   return (
     <section className="service-panel">
@@ -55,10 +55,10 @@ export default function ServicePanel() {
           value={formData.registrationNumber}
           onChange={(e) => handleChange("registrationNumber", e.target.value)}
           className="service-input"
-          disabled = {!isVehicleReg}
+          disabled={!isVehicleReg}
         />
 
-        <select className="service-input" value={formData.state} onChange={(e) => handleChange("state", e.target.value)} disabled ={isVehicleReg}>
+        <select className="service-input" value={formData.state} onChange={(e) => handleChange("state", e.target.value)} disabled={isVehicleReg}>
           <option value="">{t("selectState")}</option>
 
           {STATES.map((state) => (
@@ -68,7 +68,7 @@ export default function ServicePanel() {
           ))}
         </select>
 
-        <select className="service-input" value={formData.rto} onChange={(e) => handleChange("rto", e.target.value)} disabled={isVehicleReg ||!formData.state}>
+        <select className="service-input" value={formData.rto} onChange={(e) => handleChange("rto", e.target.value)} disabled={isVehicleReg || !formData.state}>
           <option value="">{!formData.state ? t("noRTO") : t("selectRTO")}</option>
 
           {availableRtos.map((rto) => (

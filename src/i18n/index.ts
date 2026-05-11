@@ -1,7 +1,5 @@
 import i18n from "i18next";
-
 import { initReactI18next } from "react-i18next";
-
 import en from "../translation/en";
 import hi from "../translation/hi";
 
@@ -12,11 +10,8 @@ i18n
       en,
       hi,
     },
-
     lng: "en",
-
     fallbackLng: "en",
-
     interpolation: {
       escapeValue: false,
     },

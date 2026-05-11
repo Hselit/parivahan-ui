@@ -37,7 +37,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-
   flex-shrink: 0;
 }
 
@@ -77,13 +76,10 @@
 
   .top-alert-actions {
     order: 2;
-
     justify-content: center;
-
     flex-wrap: wrap;
   }
 }
-
 
 @media (max-width: 600px) {
   .top-alert-text {

@@ -1,5 +1,5 @@
 export interface Language {
-code: string;
-label: string;
-nativeLabel: string;
+  code: string;
+  label: string;
+  nativeLabel: string;
 }

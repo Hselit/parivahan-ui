@@ -6,18 +6,13 @@ import "./styles/mainContent.css";
 
 export default function MainContent() {
   return (
-    <main
-      id="main-content"
-      className="main-content"
-    >
+    <main id="main-content" className="main-content">
       <div className="content-layout">
-
         <ServicePanel />
 
         <CenterBanner />
 
         <IndiaMapPanel />
-
       </div>
     </main>
   );
